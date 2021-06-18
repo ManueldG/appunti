@@ -1,0 +1,20 @@
+git clone url-della-repository
+# Cloniamo la repo di un collega o semplicemente anche la nostra che abbiamo appena creato su GitHub oppure banalmente una Repo pubblica sul quale volete sperimentare (su quest'ultima occhio che se non siete "contributor" difficilmente potrete pushare).
+
+git checkout -b il-nome-della-mia-nuova-branch
+# Crea una nuova branch partendo dalla branch sul quale vi trovate in quel momento (di solito vi capita master, ma nulla vieta che state su una branch di nome pippo e volete partire da quella, o meglio tecnicamente, tirarvi giù un "ramo" da essa, magari per fare qualche prova tenendo pulita la branch "ufficiale")
+Di solito tenete una branch master "INTOCCABILE" direttamente, una branch denominata "develop" e varie feature branch per esempio feature/add-new-crud-for-products
+
+git add .
+# Non parlerò in "tecnicese" ma sappiate che questa istruzione su prende tutti quei file che avete creati nuovi (e non stanno ancora sotto controllo di versione) oppure che avete cancellato e li mette sotto staging pronti per essere spediti col "git commit -m ....." verso la nostra repository remota
+
+git commit -m "feat. Add new header for products listing"
+
+git commit -m "fix. Return for getProducts function"
+# "committiamo" le nostre modifiche locali pronte per essere pushate
+
+git push origin nome-della-mia-branch
+# Dai su forza possiamo "Pusharle" nella repo remota
+
+git pull origin nome-della-mia-branch
+# hey caro collega fatti un pull, scarica le modifiche che ho appena pushato (il collega deve avere la branch in locale, vedremo nelle prossime puntate una situazione simile alla realtà dove il collega NON ha la "tua" branch)
