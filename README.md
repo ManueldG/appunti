@@ -1,0 +1,3 @@
+# appunti
+
+breve prontuarioper GIT
