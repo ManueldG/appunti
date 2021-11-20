@@ -1,3 +1,3 @@
 # appunti
 
-breve prontuarioper GIT
+breve prontuario per GIT
